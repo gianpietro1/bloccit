@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def my_name
-    'gianpietro'
+    'gianpietro1'
   end
-  
+
 end
