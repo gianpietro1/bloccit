@@ -1,1 +1,25 @@
 @import "bootstrap";
+
+.user-info {
+  margin-top: 9px;
+}
+
+.nav {
+  margin-top: 5px;
+  background-color: #428bca
+}
+
+.nav a {
+  color: white;
+}
+
+.nav-tabs > li > a:hover {
+  background-color: #333333;
+  border-radius: 0;
+  border-color: transparent;
+}
+
+.container .jumbotron {
+  margin-top: 14px;
+}
+
