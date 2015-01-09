@@ -32,6 +32,8 @@ gem 'faker'
 gem 'devise'
 # Use figaro for sensitive info
 gem 'figaro', '1.0'
+# Pundit gem for authentication
+gem 'pundit'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
