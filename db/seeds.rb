@@ -42,9 +42,6 @@ posts = Post.all
     )
 end
 
-user = User.first
-user.skip_reconfirmation!
-
 # Create an admin user
 admin = User.new(
   name: 'Admin User',
