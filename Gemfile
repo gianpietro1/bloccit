@@ -34,6 +34,8 @@ gem 'devise'
 gem 'figaro', '1.0'
 # Pundit gem for authentication
 gem 'pundit'
+# Post Markdown
+gem 'redcarpet'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
