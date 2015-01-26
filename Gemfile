@@ -36,6 +36,10 @@ gem 'figaro', '1.0'
 gem 'pundit'
 # Post Markdown
 gem 'redcarpet'
+# Image managing
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
