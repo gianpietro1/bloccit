@@ -1,10 +1,6 @@
-class PostPolicy < ApplicationPolicy
+class CommentPolicy < ApplicationPolicy
 
-  def index?
-    true
-  end
-
-  def update?
+  def destroy?
     user.present? && (record.user == user || user.admin? || user.moderator?)
   end
 
