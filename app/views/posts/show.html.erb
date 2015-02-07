@@ -38,7 +38,7 @@
   <div class="col-md-4">
     <h4>Comments</h4>
     <% if current_user %>
-      <%= render partial: "comments/form", locals: { topic: @topic, post: @post } %>
+      <%= render partial: "comments/form", locals: { post: @post } %>
     <% else %>
       <i>You must sign in to enter a comment</i>
     <% end %>
