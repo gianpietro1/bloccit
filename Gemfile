@@ -17,6 +17,7 @@ end
 
 group :test do
   gem 'rspec-rails', '~> 3.1.0'
+  gem 'capybara', '~> 2.3.0'
 end
 
 # Using Bootstrap for CSS
