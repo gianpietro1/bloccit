@@ -45,6 +45,6 @@
     <% else %>
       <i>You must sign in to enter a comment</i>
     <% end %>
-    <%= render @comments  %>
+    <%= render partial: 'comments/comment', collection: @comments  %>
   </div>
 </div>
