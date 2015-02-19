@@ -41,10 +41,14 @@
   <div class="col-md-4">
     <h4>Comments</h4>
     <% if current_user %>
-      <%= render partial: "comments/form", locals: { post: @post } %>
+      <div class='new-comment'>
+        <%= render partial: "comments/form", locals: { post: @post } %>
+      </div>
     <% else %>
       <i>You must sign in to enter a comment</i>
     <% end %>
-    <%= render partial: 'comments/comment', collection: @comments  %>
+      <div class='js-comments'>
+        <%= render partial: 'comments/comment', collection: @comments  %>
+      </div>
   </div>
 </div>

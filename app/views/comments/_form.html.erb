@@ -1,14 +1,5 @@
-<%= form_for [post,Comment.new] do |f| %>
-   <% if Comment.new.errors.any? %>
-    <div class="alert alert-danger">
-      <h4>There are <%= pluralize(Comment.new.errors.count, "error") %></h4>
-      <ul>
-          <% Comment.new.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= form_for [post,Comment.new], remote: true do |f| %>
+
   <div class="form_group">
       <%= f.label "New comment" %>
       <%= f.text_area :body, rows: 4, class: 'form-control', placeholder: "Enter comment body" %>
