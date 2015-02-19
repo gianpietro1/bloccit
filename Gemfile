@@ -49,6 +49,8 @@ gem 'mini_magick'
 gem 'fog'
 # Pagination
 gem 'will_paginate', '~> 3.0.5'
+# Performance monitoring
+gem 'newrelic_rpm'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
