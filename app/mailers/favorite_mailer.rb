@@ -6,7 +6,7 @@ class FavoriteMailer < ActionMailer::Base
     # New Headers
     headers["Message-ID"] = "<comments/#{comment.id}@gianpietro-bloccit.com"
     headers["In-Reply-To"] = "<post/#{post.id}@gianpietro-bloccit.com"
-    headers["Message-ID"] = "<post/#{post.id}@gianpietro-bloccit.com"
+    headers["References"] = "<post/#{post.id}@gianpietro-bloccit.com"
 
     @user = user
     @post = post
