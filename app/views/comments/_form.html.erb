@@ -1,11 +1,11 @@
 <%= form_for [post,Comment.new], remote: true do |f| %>
 
 <!--
-  <% if post.errors.any? %>
+  <% if Comment.new.errors.any? %>
     <div class="alert alert-danger">
-      <h4>There are <%= pluralize(post.errors.count, "error") %></h4>
+      <h4>There are <%= pluralize(Comment.new.errors.count, "error") %></h4>
       <ul>
-          <% post.errors.full_messages.each do |msg| %>
+          <% Comment.new.errors.full_messages.each do |msg| %>
             <li><%= msg %></li>
           <% end %>
       </ul>
